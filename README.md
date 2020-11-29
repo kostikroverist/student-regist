@@ -1,1 +1,1 @@
-"# student-regist" 
+# student-registration
