@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let student of students">
+      <mat-card class="card">
+        <div class="image-wrapper">
+            <img [src]="student.url" [alt]="student.firstName">
+        </div>
+        <div class="details-wrapper">
+            <h3 class="title">{{ student.firstName + " " + student.lastName | titlecase }}</h3> 
+            <p style="text-align: center;">Age: {{ student.age }}</p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
